@@ -28,6 +28,8 @@ gem 'kaminari'
 gem 'simple_form'
 #Use Font Awesome
 gem "font-awesome-rails"
+# Use user authentication
+gem 'devise'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
