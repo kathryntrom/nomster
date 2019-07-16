@@ -24,6 +24,10 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 #Use pagination
 gem 'kaminari'
+#Use geocode
+gem "geocoder"
+#ENV
+gem "figaro"
 #Use Simple Form
 gem 'simple_form'
 #Use Font Awesome
