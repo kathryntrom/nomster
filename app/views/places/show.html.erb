@@ -89,4 +89,32 @@
     <% end %>
   </div>
 
+  <div class="clear"></div>
+
+  <div class="images">
+    <h1 class="float-left">Images</h1>
+    <div class="clear"></div>
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+          <%= f.input :caption %>
+          <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+
+  <div class="row">
+    <% @place.photos.each do |photo| %>
+      <div class="col-12 col-sm-6">
+        <blockquote>
+          <%= photo.caption %>
+          <small><%= photo.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
+  </div>
+
 </div>
