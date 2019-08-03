@@ -30,7 +30,6 @@ gem 'kaminari'
 gem "geocoder"
 #ENV
 gem "figaro"
-gem 'carrierwave', '~> 1.0'
 gem 'fog-aws'
 #Use Simple Form
 gem 'simple_form'
