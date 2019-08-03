@@ -30,6 +30,7 @@ gem 'kaminari'
 gem "geocoder"
 #ENV
 gem "figaro"
+gem 'fog-aws'
 #Use Simple Form
 gem 'simple_form'
 #Use Font Awesome

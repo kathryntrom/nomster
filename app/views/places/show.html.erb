@@ -23,7 +23,7 @@
       }
     </script>
     <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz4BgmP9d9zGji2YLnSof_6SMHV2fk2RA&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=<%= Figaro.load["GEOCODER_API_KEY"] %>&callback=initMap">
     </script>
     <div id="map"></div>
   <% end %>
@@ -109,14 +109,14 @@
 
   <div class="row">
     <% @place.photos.each do |photo| %>
-      <div class="col-12 col-sm-6">
-        <blockquote>
-          <%= photo.caption %>
-          <%= photo.picture.url %>
-          <small><%= photo.user.email %></small>
-        </blockquote>
-      </div>
-    <% end %>
+    <div>
+      <blockquote>
+        <b><%= photo.caption %></b>
+        <%= image_tag photo.picture.url %>
+        <small><%= photo.user.email %></small>
+      </blockquote>
+    </div>
+  <% end %>
   </div>
 
 </div>
